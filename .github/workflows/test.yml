@@ -1,0 +1,24 @@
+name: test
+on: [push]
+
+jobs:
+  build:
+    name: test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        emacs_version:
+          # - 26.1
+          # - 26.2
+          - 26.3
+          # - snapshot
+      max-parallel: 1
+    steps:
+      - uses: purcell/setup-emacs@v2.0
+        with:
+          version: ${{ matrix.emacs_version }}
+      - uses: actions/checkout@v2
+      - name: test-sandboxed
+        run: |
+          make init
+          make test-sandboxed
