@@ -64,7 +64,10 @@ BASE is a base url."
           (libxml-parse-html-region start end))
          (base-url (or base (feed-discovery--find-base-url dom))))
     (-some--> dom
-      (dom-by-tag it 'head)
+      ;; Do not filter by head element because the link elements are placed
+      ;; in body element on some pages,
+      ;; e.g. "https://www.youtube.com/channel/CHANNEL_ID".
+      ;; (dom-by-tag it 'head)
       (dom-by-tag it 'link)
       (-filter #'feed-discovery--feed-link-p it)
       (--map (dom-attr it 'href) it)
