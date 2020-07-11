@@ -77,7 +77,6 @@ BASE is a base url."
   "Discover feeds from URL."
   (with-temp-buffer
     (url-insert-file-contents url)
-    ;; NOTE: no libxml version is needed?
     (feed-discovery--discover-feeds-in-region (point-min) (point-max) url)))
 
 ;;;###autoload
