@@ -4,7 +4,7 @@
 
 ;; Author:  Hiroki YAMAKAWA <s06139@gmail.com>
 ;; URL: https://github.com/HKey/feed-discovery
-;; Version: 0.1.0
+;; Version: 1.0.0
 ;; Package-Requires: ((emacs "25.1") (dash "2.16.0"))
 
 ;; This program is free software; you can redistribute it and/or modify
