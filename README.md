@@ -1,4 +1,8 @@
 # feed-discovery
+
+[![MELPA](https://melpa.org/packages/feed-discovery-badge.svg)](https://melpa.org/#/feed-discovery)
+[![MELPA Stable](https://stable.melpa.org/packages/feed-discovery-badge.svg)](https://stable.melpa.org/#/feed-discovery)
+
 This package allows you to discover feed urls from a website url by
 RSS/Atom autodiscovery.
 
