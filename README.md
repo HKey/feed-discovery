@@ -19,19 +19,14 @@ The command discover feed urls from input url and copy one of them.
 
 ## Installation
 
-TODO: register to MELPA
+You can install feed-discovery from [MELPA](https://melpa.org/#/) or
+[MELPA Stable](https://stable.melpa.org/#/) by following steps:
 
-Currently this package is not registered in any emacs lisp package archives.
-So manual installation is needed.
+1. Setup the Emacs built-in package manager to use MELPA or MELPA Stable.  
+   MELPA's documentation is [here](https://github.com/melpa/melpa#usage).
 
-Here is an example to install via package.el manually.
-You can install this package by evaluating the code below.
-
-```emacs-lisp
-(with-temp-buffer
-  (url-insert-file-contents "https://raw.githubusercontent.com/HKey/feed-discovery/master/feed-discovery.el")
-  (package-install-from-buffer))
-```
+2. Install feed-discovery.  
+   `M-x package-install feed-discovery`
 
 ## Versioning
 
