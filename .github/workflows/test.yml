@@ -11,6 +11,7 @@ jobs:
           # - 26.1
           # - 26.2
           - 26.3
+          - 27.1
           # - snapshot
       max-parallel: 1
     steps:
