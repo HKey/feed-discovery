@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - '**.el'
+  pull_request:
+    paths:
+      - '**.el'
 
 jobs:
   build:
